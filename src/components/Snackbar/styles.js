@@ -4,11 +4,7 @@ export default makeStyles((theme) => ({
   root: {
     width: '100%',
     '& > * + *': {
-      margin: theme.spacing(2),
+      marginTop: theme.spacing(2),
     },
-  },
-
-  divider: {
-    margin: '20px 0',
   },
 }));
