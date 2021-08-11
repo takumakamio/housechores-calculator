@@ -1,16 +1,15 @@
 // チャート用データのカスタムフック
-
 import { useContext } from 'react';
 import { HousechoresCalculatorContext } from './context/context';
 
-import { incomeCategories, expenseCategories, resetCategories } from './constants/categories';
+import { Player1Categories, Player2Categories, resetCategories } from './constants/categories';
 
 const useTransactions = (title) => {
   resetCategories();
   const { transactions } = useContext(HousechoresCalculatorContext);
   const rightTransactions = transactions.filter((t) => t.type === title); //タイトル名とタイプが一致してればデータに加える
   const total = rightTransactions.reduce((acc, currVal) => (acc += currVal.amount), 0);
-  const categories = title === 'Income' ? incomeCategories : expenseCategories;
+  const categories = title === 'Player1' ? Player1Categories : Player2Categories;
 
   rightTransactions.forEach((t) => {
     const category = categories.find((c) => c.type === t.category);
@@ -20,6 +19,7 @@ const useTransactions = (title) => {
 
   const filteredCategories = categories.filter((sc) => sc.amount > 0);
 
+  // グラフ描画
   const chartData = {
     datasets: [
       {
