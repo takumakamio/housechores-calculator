@@ -9,7 +9,7 @@ import {
   IconButton,
   Slide,
 } from '@material-ui/core';
-import { Delete, MoneyOff } from '@material-ui/icons';
+import { Delete, Accessibility } from '@material-ui/icons';
 
 import { HousechoresCalculatorContext } from '../../context/context';
 import useStyles from './styles';
@@ -24,11 +24,11 @@ const List = () => {
         <Slide direction="down" in mountOnEnter unmountOnExit key={t.id}>
           <ListItem>
             <ListItemAvatar>
-              <Avatar className={t.type === 'Income' ? classes.avatarIncome : classes.avatarExpense}>
-                <MoneyOff />
+              <Avatar className={t.type === 'Player1' ? classes.avatarPlayer1 : classes.avatarPlayer2}>
+                <Accessibility />
               </Avatar>
             </ListItemAvatar>
-            <ListItemText primary={t.category} secondary={`$${t.amount} - ${t.date}`} />
+            <ListItemText primary={t.category} secondary={`${t.amount}分 - ${t.date}`} />
             <ListItemSecondaryAction>
               <IconButton edge="end" aria-label="delete" onClick={() => deleteTransaction(t.id)}>
                 <Delete />
