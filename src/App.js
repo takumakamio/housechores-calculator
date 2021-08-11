@@ -14,20 +14,20 @@ const App = () => {
         container
         spacing={0}
         alignItems="center"
-        justify="center"
+        justifyContent="center"
         style={{ height: '100vh' }}
       >
         <Grid item xs={11} sm={4} className={classes.mobile}>
-          <Details title="Income" />
+          <Details title="あなた" />
         </Grid>
         <Grid item xs={12} sm={3} className={classes.main}>
           <Main />
         </Grid>
         <Grid item xs={11} sm={4} className={classes.desktop}>
-          <Details title="Income" />
+          <Details title="あなた" />
         </Grid>
         <Grid item xs={11} sm={4} className={classes.last}>
-          <Details title="Expense" />
+          <Details title="パートナー" />
         </Grid>
       </Grid>
     </div>

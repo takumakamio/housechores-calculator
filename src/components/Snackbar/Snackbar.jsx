@@ -24,7 +24,7 @@ const CustomizedSnackbar = ({ open, setOpen }) => {
         onClose={handleClose}
       >
         <MuiAlert onClose={handleClose} severity="success" elevation={6} variant="filled">
-          Transaction successfully created.
+          更新完了しました
         </MuiAlert>
       </Snackbar>
     </div>

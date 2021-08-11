@@ -11,9 +11,11 @@ const Main = () => {
   const { balance } = useContext(HousechoresCalculatorContext);
   return (
     <Card className={classes.root}>
-      <CardHeader title="Expense Tracker" />
+      <CardHeader title="家事バランサー" className={classes.title} />
       <CardContent>
-        <Typography variant="h5">Total Balance ${balance}</Typography>
+        <Typography variant="h6" className={classes.title}>
+          Total Balance ${balance}
+        </Typography>
         <Divider className={classes.divider} />
         <Form />
       </CardContent>
