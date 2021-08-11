@@ -25,10 +25,13 @@ const useTransactions = (title) => {
       {
         data: filteredCategories.map((c) => c.amount),
         backgroundColor: filteredCategories.map((c) => c.color),
+        
       },
     ],
     labels: filteredCategories.map((c) => c.type),
+
   };
+  
 
   return { filteredCategories, total, chartData };
 };
