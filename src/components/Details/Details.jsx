@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, CardHeader, CardContent, Typography, Divider } from '@material-ui/core';
-import { PolarArea } from 'react-chartjs-2';
+import { Doughnut, Bar } from 'react-chartjs-2';
 import useTransactions from '../../useTransactions';
 
 import useStyles from './styles';
@@ -18,9 +18,10 @@ const Details = ({ title }) => {
         <Typography variant="h5">
           合計時間: {hours} 時間 ({total} 分)
         </Typography>
-        <Typography variant="h5">推定収入: {salary}円 (1,150円 X 時間)</Typography>
+        <Typography variant="h5">推定収入: {salary}円 (1,150円 x 時間)</Typography>
         <Divider className={classes.divider} />
-        <PolarArea data={chartData} />
+        <Doughnut data={chartData} />
+        <Bar data={chartData} />
       </CardContent>
     </Card>
   );

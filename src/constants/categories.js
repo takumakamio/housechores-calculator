@@ -30,7 +30,7 @@ export const Player1Categories = [
   { type: '掃除', amount: 0, color: Player1Colors[3] },
   { type: '片付け', amount: 0, color: Player1Colors[4] },
   { type: '買い物', amount: 0, color: Player1Colors[5] },
-  { type: '育児', amount: 0, color: Player1Colors[5] },
+  { type: '育児', amount: 0, color: Player1Colors[6] },
   { type: '家計管理', amount: 0, color: Player1Colors[7] },
   { type: 'その他', amount: 0, color: Player1Colors[8] },
 ];
@@ -42,7 +42,7 @@ export const Player2Categories = [
   { type: '掃除', amount: 0, color: Player2Colors[3] },
   { type: '片付け', amount: 0, color: Player2Colors[4] },
   { type: '買い物', amount: 0, color: Player2Colors[5] },
-  { type: '育児', amount: 0, color: Player2Colors[5] },
+  { type: '育児', amount: 0, color: Player2Colors[6] },
   { type: '家計管理', amount: 0, color: Player2Colors[7] },
   { type: 'その他', amount: 0, color: Player2Colors[8] },
 ];
