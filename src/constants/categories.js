@@ -19,8 +19,6 @@ const Player2Colors = [
   '#ee8d68',
   '#f79d79',
   '#ffae8a',
-  '#cc474b',
-  '#f55b5f',
 ];
 
 export const Player1Categories = [
