@@ -23,6 +23,7 @@ const useTransactions = (title) => {
   const chartData = {
     datasets: [
       {
+        label: '非表示',
         data: filteredCategories.map((c) => c.amount),
         backgroundColor: filteredCategories.map((c) => c.color),
       },
