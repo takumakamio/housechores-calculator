@@ -9,12 +9,12 @@
 
 ## 開発環境
 - OS：Mac　
+- IDE：VS Code
 - 言語：JavaScript
 - ライブラリ：
   - React.js
   - Material UI
   - Chart.js
-- IDE：VS Code
 
 ## LIVE SITE
 https://housechores-calculator-nu.vercel.app
