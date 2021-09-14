@@ -10,8 +10,8 @@
 ## 開発環境
 - OS：Mac　
 - 言語：JavaScript
-- フレームワーク：React
 - ライブラリ：
+  - React.js
   - Material UI
   - Chart.js
 - IDE：VS Code
