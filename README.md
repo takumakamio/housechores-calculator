@@ -8,7 +8,6 @@
 - 共働きの家庭にて
 
 ## 開発環境
-- OS：Mac　
 - IDE：VS Code
 - 言語：JavaScript
 - ライブラリ：
