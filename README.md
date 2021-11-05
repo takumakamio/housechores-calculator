@@ -11,7 +11,7 @@
 - IDE：VS Code
 - 言語：JavaScript
 - ライブラリ：
-  - React.js
+  - React
   - Material UI
   - Chart.js
 
